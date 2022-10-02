@@ -144,7 +144,7 @@ function register_post_types(){
 function edit_admin_menus() {
     global $menu;
     global $submenu;
-    $menu[5][0] = 'Информация'; // Изменить Записи на Информация
+    $menu[5][0] = 'Нововсти'; // Изменить Записи на Информация
     $submenu['edit.php'][15][0] = 'Категории';
 }
 add_action( 'admin_menu', 'edit_admin_menus' );
@@ -320,3 +320,15 @@ function options_instructions_example() {
 	}
 }
 add_action( 'admin_notices', 'options_instructions_example' );
+
+// Limit media library access
+
+add_filter( 'ajax_query_attachments_args', 'wpb_show_current_user_attachments' );
+
+function wpb_show_current_user_attachments( $query ) {
+	$user_id = get_current_user_id();
+	if ( $user_id && !current_user_can('activate_plugins') && !current_user_can('edit_others_posts') ) {
+		$query['author'] = $user_id;
+	}
+	return $query;
+}

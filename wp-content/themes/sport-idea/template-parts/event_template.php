@@ -1,24 +1,9 @@
 <div class="content">
-  <?php
-  $current_user = wp_get_current_user();
-  $current_user_role_arr = $current_user->roles;
-
-  if ($current_user_role_arr[0] == 'sportsman'){
-    $all_users = get_field('user_list', $post->ID);
-    $all_users .= (string) $post->ID . ',';
-    update_field('user_list', $all_users);
-    } ?>
-
-</div><!--/.content-->
-
-
-<div class="content">
     <div class="pad group">
 		<?php global $post;
         while ( have_posts() ): the_post();
 	        $media = get_attached_media( 'image', $post->ID );
         ?>
-        <?php var_dump($media);?>
             <article <?php post_class(); ?>>
                 <div class="post-category">
 					<?php the_category(' / '); ?>
