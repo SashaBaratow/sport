@@ -1,0 +1,35 @@
+/*
+Theme Name: sport-idea
+Template: Boxstyle
+
+Не обязательные параметры:
+Theme URI: http://idea.kg/
+Description: Дочерняя тема для темы Boxstyle
+Author: Kama
+Author URI: @baratov.13.a
+Version: 1.0
+*/
+
+@import url("../boxstyle/style.css");
+#events-year{
+   position: relative;
+   z-index: 10;
+   outline: unset;
+}
+.accordion{
+   position: relative;
+}
+.main-inner:before{
+   height: 20px;
+}
+.event-overlay{
+   display: none;
+}
+.event-overlay.active{
+   position: absolute;
+   display: block;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.24);
+   z-index: 10;
+}

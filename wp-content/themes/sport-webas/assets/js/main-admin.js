@@ -1,0 +1,1 @@
+let textarea = document.querySelector('#sportsman_list textarea').readOnly = true;

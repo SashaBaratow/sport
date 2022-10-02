@@ -1,0 +1,7 @@
+ID,Title,Content,Excerpt,Date,"Post Type",Permalink,"Image URL","Image Title","Image Caption","Image Description","Image Alt Text","Image Featured","Attachment URL",Рубрики,Метки,Status,"Author ID","Author Username","Author Email","Author First Name","Author Last Name",Slug,Format,Template,Parent,"Parent Slug",Order,"Comment Status","Ping Status","Post Modified Date"
+1,"Привет, мир!","<!-- wp:paragraph -->
+<p>Добро пожаловать в WordPress. Это ваша первая запись. Отредактируйте или удалите ее, затем начинайте создавать!</p>
+<!-- /wp:paragraph -->",,2022-09-11,post,http://sport/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%82-%d0%bc%d0%b8%d1%80/,,,,,,,,"Без рубрики",,publish,1,admin,sashabaratow@gmail.com,,,%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%82-%d0%bc%d0%b8%d1%80,,,0,0,0,open,open,2022-09-11
+19,admin,"<!-- wp:paragraph -->
+<p>admin admin</p>
+<!-- /wp:paragraph -->",,2022-09-17,post,http://sport/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/admin/,,,,,,,,"Без рубрики",,private,1,admin,sashabaratow@gmail.com,,,admin,,,0,0,0,open,open,2022-09-21
